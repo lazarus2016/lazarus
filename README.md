@@ -18,7 +18,7 @@ Install PostgreSQL (version 9.5.2):
 ```
 curl -sL "https://downloads.lisk.io/scripts/setup_postgresql.Linux" | bash -
 sudo -u postgres createuser --createdb --password $USER
-createdb lazarus_test
+createdb lazarus_main
 ```
 
 Install Node.js (version 0.12.x) + npm:
