@@ -1,0 +1,68 @@
+{
+    "port": 7020,
+    "address": "0.0.0.0",
+    "serveHttpAPI": true,
+    "serveHttpWallet": true,
+    "version": "1.0.0",
+    "fileLogLevel": "info",
+    "logFileName": "logs.log",
+    "consoleLogLevel": "log",
+    "db": {
+        "host": "localhost",
+        "port": 5432,
+        "database": "lazarus_main",
+        "user": "postgres",
+        "password": "postgres",
+        "poolSize": 20,
+        "poolIdleTimeout": 30000,
+        "reapIntervalMillis": 1000,
+        "logEvents": [
+            "warn"
+        ]
+    },
+    "api": {
+        "access": {
+            "whiteList": []
+        }
+    },
+    "peers": {
+        "list": [
+            {
+                "ip": "45.32.232.183",
+                "port": 7020
+            }
+        ],
+        "blackList": [],
+        "options": {
+            "timeout": 4000
+        }
+    },
+    "forging": {
+        "force": false,
+    	"secret": [],
+        "access": {
+            "whiteList": [
+                "127.0.0.1"
+            ]
+        }
+    },
+    "loading": {
+        "verifyOnLoading": false,
+        "loadPerIteration": 5000
+    },
+    "ssl": {
+        "enabled": false,
+        "options": {
+            "port": 443,
+            "address": "0.0.0.0",
+            "key": "../certs/lazarus.key",
+            "cert": "../certs/lazarus.crt"
+        }
+    },
+    "dapp": {
+        "masterrequired": true,
+        "masterpassword": "",
+        "autoexec": []
+    },
+    "nethash": "aa0495ff0b2011109835bd968d5acbf05d71de490bdeac82a97c2ea804067ea5"
+}
